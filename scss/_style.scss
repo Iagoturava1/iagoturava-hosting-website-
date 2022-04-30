@@ -1,0 +1,276 @@
+body{
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    // header start 
+        header{
+            @include flex-props;
+            @extend %senter-size;
+            
+
+            & > .logo{
+            margin: 0px;
+            }
+
+            & > .n-1{
+            @include justflex;
+                margin-left: 10px;
+
+                nav{
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    ul{
+                        @include justflex;
+                    
+                    
+                        li{
+                            font-size: 16px;
+                            color:$main-color ;
+                            margin-right: 20px;
+                        }
+                    }   
+                }
+            }
+        }
+    // headere finish
+    // section#1 starst
+    .sec-1{
+        
+        @include flex-props;
+
+    & > .in-1{
+            margin-left: 50px;
+
+            & > .front-p{
+                font-size: 90px;
+                color: $main-color;
+                margin-bottom:50px;
+
+            }
+            & > .low{
+                font-size: 19px;
+                color:$main-color;
+                margin-bottom:70px;
+            }
+
+        }
+
+        & > .in-2{
+            margin: 0px;
+        }
+
+    }
+    // section#1 finish
+    // section#2 starst
+    .sec-2{
+        max-width: 1170px;
+        width: 100%;
+        margin: auto;
+        & > .dscv{
+            
+        
+            & > .discover{
+                
+                font-size:16px ;
+                color:$main-color ;
+                margin-left: 560px;
+                margin-bottom: 10px;
+                margin-top: 50px;
+            
+            }
+            & > .imgarrow{
+                margin-left: 590px;
+                margin-bottom: 100px;
+            }
+        }
+
+        & > .Paketi{
+            font-size: 16px;
+            color:$main-color;
+            margin-left: 580px;
+            margin-bottom: 100px;
+        }
+
+        & > .insec-2{
+            @include flex-props;
+            
+            & > .sbox{
+                padding: 30px;
+                width:470px;
+                height:537px;
+                background-color:#fff ;
+                border: 2px;
+                border-color: rgb(249, 249, 249);
+            
+                & > .p-1{
+                        margin-left: 120px;
+                        font-size: 48px;
+                        color: $main-color;
+                        
+                }
+                & > .pp-1{
+                        margin-left: 100px;
+                        font-size: 48px;
+                        color: $main-color;
+                        margin-bottom: 50px;
+                }
+                & > .xx{
+                    margin-left: 65px;
+                }
+                & > .p-2{
+                        margin-left: 50px;
+                        font-size:19px ;
+                        color: $main-color;
+                }
+                & > .pp-2{
+                        margin-left: 70px;
+                        font-size:19px ;
+                        color: $main-color;
+                    margin-bottom: 50px;;
+                }
+                
+                & > .inb-1{
+                    & > .inp-1{
+                        margin-left: 145px;
+                        font-size: 12px;
+                    color: $main-color;
+                    margin-bottom: 10px;
+                    }
+                    & > .inp-2{
+                        margin-left: 110px;
+                        font-size: 72px;
+                    color: $main-color;
+                    margin-bottom: 10px;
+                    }
+                    & > .inp-3{
+                        margin-left: 130px;
+                        font-size: 24px;
+                    color: $main-color;
+                    margin-bottom: 50px;
+                    }
+                }
+
+                & > .inb-2{
+                    margin-left: 50px;
+                    margin-bottom: 30px;
+
+                    & > .in-inb-1{
+                        display: flex;
+                        margin-bottom: 5px;
+                    
+                        & > .check{
+                            margin-right: 0px;
+                        }
+                        & > .inp-4{
+                            margin-left: 5px;
+                            font-size:16px; 
+                            color:$main-color;
+                        
+                        }
+                    }
+
+                }
+                & > .inb-3{
+                    display: flex;
+                   
+                    & > .inp-5{
+                        margin-top: 4px;
+                        color:$main-color ;
+                        font-size:16px ;
+                        margin-left: 120px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            & > .shadow{
+                height: 560px;
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #E0E0E0; 
+                box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #E0E0E0;
+                margin-top: 35px;
+            }
+        }   
+        
+
+
+    }
+    // section#2 finish
+    // section#3 starst
+    .sec-3{
+        display: flex;
+        & > .onebox{
+        
+            & > .sec-3p1{
+                color:$main-color ;
+                font-size:12px ;
+                margin-left:630px;
+                margin-top: 300px;
+                margin-bottom: 20px;
+            }
+            & > .sec-3p2{
+                color:$main-color ;
+                font-size:72px ;
+                margin-left: 350px;
+                margin-bottom: 20px;
+
+            }
+            & > .search-container{
+                margin-left: 480px;
+                margin-bottom: 20px;
+
+                & > form.example input[type=text] {
+                    padding: 10px;
+                    font-size: 17px;
+                    border: 0px solid #ffffff;
+                    border-radius: 30px;
+                    border: none;
+                    float: left;
+                    width: 400px;
+                    background: #ffffff;
+                }
+                & > form.example button {
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border-radius: 30px;
+                    font-size: 17px;
+                    background-color: #1b2d55;
+                    color: #1b2d55;
+                    border: 0px solid ;
+                    border-left: none; /* Prevent double borders */
+                   cursor: pointer;
+                   margin-left: 5px;
+                  }
+                  form.example button:hover {
+                    background: #162547;
+                  }
+                  
+            }
+            & > .sec-3p3{
+                color:$main-color ;
+                font-size:22px ;
+                margin-left: 540px;
+                margin-top: 80px;
+            }
+            & > .sec-3p4{
+                color:$main-color ;
+                font-size:22px ;
+                margin-left: 600px;
+            }
+        }
+        & >.twobox{
+            margin-top: 280px;
+        }
+
+    
+    }
+
+
+
+
+
+}

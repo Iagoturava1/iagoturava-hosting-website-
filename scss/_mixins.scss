@@ -1,0 +1,10 @@
+@mixin flex-props($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin justflex {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
