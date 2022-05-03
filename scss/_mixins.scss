@@ -8,3 +8,7 @@
     flex-wrap: wrap;
     
 }
+@mixin flex-propss($justify: space-between, $align: center) {
+    display: flex;
+    align-items: $align;
+}

@@ -32,6 +32,11 @@ body{
                             color:$main-color ;
                             margin-right: 20px;
                         }
+                        li:hover{
+                            border: 1px; 
+                            border-radius: 20px;
+                            background-color:#b5f1f6; 
+                        }
                     }   
                 }
             }
@@ -97,6 +102,7 @@ body{
 
         & > .insec-2{
             @include flex-props;
+
             
             & > .sbox{
                 padding: 30px;
@@ -206,7 +212,7 @@ body{
             & > .sec-3p1{
                 color:$main-color ;
                 font-size:12px ;
-                margin-left:630px;
+                margin-left: 630px;
                 margin-top: 300px;
                 margin-bottom: 20px;
             }
@@ -229,7 +235,7 @@ body{
                     border: none;
                     float: left;
                     width: 400px;
-                    background: #ffffff;
+                    background: #fdfafa;
                 }
                 & > form.example button {
                     float: left;
@@ -238,15 +244,20 @@ body{
                     padding: 10px;
                     border-radius: 30px;
                     font-size: 17px;
-                    background-color: #1b2d55;
-                    color: #1b2d55;
+                    background-color:$main-color;
+                    color: #ffffff;
                     border: 0px solid ;
                     border-left: none; /* Prevent double borders */
                    cursor: pointer;
                    margin-left: 5px;
                   }
-                  form.example button:hover {
-                    background: #162547;
+                  & > form.example button:hover {
+                    background: #152444;
+                  }
+                  & > form.example::after {
+                    content: "";
+                    clear: both;
+                    display: table;
                   }
                   
             }
@@ -259,18 +270,253 @@ body{
             & > .sec-3p4{
                 color:$main-color ;
                 font-size:22px ;
-                margin-left: 600px;
+               margin-left: 600px;
             }
         }
         & >.twobox{
             margin-top: 280px;
         }
 
-    
     }
 
+    // section#3 finish
+    // section#4 start
+    .sec-4{
+        display: flex;
+        overflow-x: auto;
+
+
+        & > .sec4cont{
+            display: flex;
+            padding: 50px;
+
+            & > .arrow{
+                
+                & > .arr01,
+                .arr02 {
+                width: auto;
+                height: auto;
+                margin-top: 200px;
+                border: none;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+                cursor: pointer;
+                z-index: 8;
+                }
+                & > .arr01{
+                    margin-left: 10px;
+                   left: 0;
+                    transform: rotate(180deg);
+                    
+                }
+                & > .arr02{
+                    margin-right: 10px;
+                    right: 0;
+
+                }
+               & >  .arr01 img,
+                .arr02 img {
+                opacity: 0.2;
+                }
+
+               & >  .arr01:hover img,
+                .arr02:hover img {
+                opacity: 1;
+                }
 
 
 
+            }
+           
+        
+            & > .sec-4inbox1{
+                width: 295px;
+                height: 520px;
+                padding:20px;
+                text-align: center;
+                background-color: #ffffff;
+                -webkit-box-shadow: 1px 17px 37px -15px #080808; 
+                box-shadow: 1px 17px 37px -15px #080808;
 
+                & > .sec-4p1{
+                    color:$main-color;
+                    font-size:12px;
+                    margin-top: 80px;
+                    
+                   
+                }
+                & > .sec-4p2{
+                    color:$main-color;
+                    font-size:48px;
+                    margin-top: 30px;
+                   
+                }
+                & > .sec-4p3{
+                    color:$main-color;
+                    font-size:19px;
+                    margin-top: 30px;
+                }
+            }
+
+            & > .sec-4inbox2{
+                margin: 0px;
+               
+
+            }
+
+        }
+        
+
+
+
+    }
+    
+    // section#4 finish
+    // footer start
+
+    footer{
+        color:$main-color;
+        background-color:#b5f1f6 ;
+        & > .footbox1{
+            @extend %senter-size;
+            display: flex;
+            justify-content: space-between;
+            & > .footinb1{
+                .footp1{
+                    font-size:16px;
+               
+                }
+            }
+            & > .footinb2{
+                & > .footp2{
+                    font-size:24px;
+                    margin-bottom: 10px;
+                }
+                & > .footp3{
+                    font-size:14px; 
+
+                }
+            }
+            & > .footinb3{
+
+               .footp4{
+                font-size:14px ;
+                margin-bottom: 10px;
+               }
+                
+            }    
+        }  
+    }
+    // footer start
+    // page2 start
+    .p2-sec-1{
+        color: $main-color ;
+        @extend %section-size;
+        & > .pg2-p1{
+            color: $main-color;
+            font-size:45px ;
+            margin-left: 200px
+        }
+        & > .pg2-bbox{
+            @extend %section-size;
+            background-image: url("../images/backgrounbox.png");
+            
+            & > .pg2-boxp1{
+                
+                font-size:48px  ;
+                padding-top: 50px;
+                margin-bottom:50px ;
+
+            }
+            & > .pg2-boxp2{
+                
+                font-size:29px;
+                padding-bottom: 300px;
+               
+
+            }
+        }
+        & > .pg2-bbox2{
+            @extend %section-size;
+            @include flex-props;
+            & >.pg2-inbbox{
+                @include flex-propss;
+
+                &  > .ppbox{
+                    margin-left: 15px;
+                    & > .pp1{
+                        font-size: 48px;
+                        margin-bottom: 10px;
+                    }
+                    & > .pp2{
+                        font-size: 16px;
+                    }
+                    
+                }
+            }
+        }
+        & > .lastbox{
+            @extend %section-size;
+        
+            & > .ppp1{
+                font-size:52px ;
+                margin: auto;
+                padding-bottom:25px ;
+
+            }
+            & > .butt{
+                color: #ffffff;
+                border: 5px ;
+                background-color: #273962;
+                border-radius: 30px;
+                font-size: 26px;
+                margin-left: 460px;
+                cursor: pointer;
+            }
+            & >.butt:hover{
+                background-color:#142345 ;
+            }
+        }
+    }
+
+    & > .pg3-sec{
+        @include flex-propss;
+        color:$main-color ;
+        margin-bottom: 30px;
+        & > .mapp{
+
+            
+            & > .map{
+                margin-left: 100px;
+     
+            }
+        }
+        & > .pg3-box{
+            margin-left: 50px;
+            & > .pg3p1{
+                font-size: 55px;
+                margin-bottom: 50px;
+
+            }
+            & > .pg3p2{
+                font-size: 20px;
+                margin-bottom: 30px;
+
+            }
+            & > .pg3p3{
+                font-size: 15px;
+                margin-bottom: 40px;
+            }
+
+
+
+            
+    
+
+        }
+    }
 }
+
