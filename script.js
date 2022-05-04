@@ -1,16 +1,36 @@
-const sec4cont = [...document.querySelectorAll('.sec4cont')];
-const arr01 = [...document.querySelectorAll('.arr01')];
-const arr02 = [...document.querySelectorAll('.arr02')];
+let sliderImages = document.querySelectorAll('.slide'),
+    arrowRight = document.querySelector('#arrow-right'),
+    arrowLeft = document.querySelector('#arrow-left'),
+    i = 0
 
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
 
-    arr01[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
 
-    arr02[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = 'none'
+  }
+}
+function startSlider() {
+  reset()
+  sliderImages[i].style.display = ''
+}
+arrowRight.addEventListener('click', function() {
+  if(i > sliderImages.length - 2 ) {i = -1}
+  i++
+  startSlider()
 })
+arrowLeft.addEventListener('click', function() {
+  if (i === 0) {i = sliderImages.length}
+  i--
+  startSlider()
+})
+
+function alert1() {
+  let y = 1
+  alert(y)
+  y++
+  setTimeout(alert1, 6000)
+}
+// alert1()
+
+startSlider()
