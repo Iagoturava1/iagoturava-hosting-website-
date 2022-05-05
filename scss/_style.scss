@@ -1,573 +1,494 @@
-body{
-    background-image: url("../images/bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+body {
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  // header start
+  header {
+    @include flex-props;
+    @extend %senter-size;
 
-    // header start 
-    header{
+    .navbar {
+      @include flex-props;
+      padding: 0 24px;
+
+      & > .nav-breanding {
+        margin: 0px;
+      }
+
+      & > .nav-menu {
         @include flex-props;
-        @extend %senter-size;
+        margin-left: 660px;
 
-        .navbar{
-            
-            @include flex-props;
-            padding: 0 24px;
-            
-
-            & > .nav-breanding{
-            margin: 0px;
-            }
-     
-            & > .nav-menu{
-                @include flex-props;
-                margin-left: 660px;
-                
-               
-                
-                & > .nav-item{
-                    margin-left: 20px;
-                }   
-                
-                & > .nav-link{
-                    transition: 0.7s ease;
-                    
-                }
-                & > .nav-link:hover{
-                    color:#2d4477; 
-                    
-                }
-                     
-            
-            }
-            & > .hamburger{
-                display: none;
-                cursor: pointer;
-
-                @media(max-width:1390px){
-                    display: block;
-                    margin-left: 1000px;
-                }
-
-                
-                & > .bar {
-                    display: block;
-                    width: 25px;
-                    height: 10px;
-                    margin: 5px auto;
-                    
-                    
-                
-
-                }
-            }
+        & > .nav-item {
+          margin-left: 20px;
         }
+
+        & > .nav-link {
+          transition: 0.7s ease;
+        }
+        & > .nav-link:hover {
+          color: #2d4477;
+        }
+      }
+      & > .hamburger {
+        display: none;
+        cursor: pointer;
+
+        @media (max-width: 1390px) {
+          display: block;
+          margin-left: 1000px;
+        }
+
+        & > .bar {
+          display: block;
+          width: 25px;
+          height: 10px;
+          margin: 5px auto;
+        }
+      }
     }
-    // headere finish
-    // section#1 starst
-    .sec-1{
-        
-        @include flex-props;
+  }
+  // headere finish
+  // section#1 starst
+  .sec-1 {
+    @include flex-props;
 
-    & > .in-1{
-            margin-left: 50px;
+    & > .in-1 {
+      margin-left: 50px;
 
-            & > .front-p{
-                font-size: 90px;
-                color: $main-color;
-                margin-bottom:50px;
-
-            }
-            & > .low{
-                font-size: 19px;
-                color:$main-color;
-                margin-bottom:70px;
-            }
-
-        }
-
-        & > .in-2{
-            margin: 0px;
-        }
-
-    }
-    // section#1 finish
-    // section#2 starst
-    .sec-2{
-        max-width: 1170px;
-        width: 100%;
-        margin: auto;
-        & > .dscv{
-            
-        
-            & > .discover{
-                
-                font-size:16px ;
-                color:$main-color ;
-                margin-left: 560px;
-                margin-bottom: 10px;
-                margin-top: 50px;
-            
-            }
-            & > .imgarrow{
-                margin-left: 590px;
-                margin-bottom: 100px;
-            }
-        }
-
-        & > .Paketi{
-            font-size: 16px;
-            color:$main-color;
-            margin-left: 580px;
-            margin-bottom: 100px;
-        }
-
-        & > .insec-2{
-            @include flex-props;
-            
-            @media (max-width: 1390px){
-                
-            }
-
-            
-            & > .sbox{
-                padding: 30px;
-                width:470px;
-                height:537px;
-                background-color:#fff ;
-                border: 2px;
-                border-color: rgb(249, 249, 249);
-            
-                & > .p-1{
-                        margin-left: 120px;
-                        font-size: 48px;
-                        color: $main-color;
-                        
-                }
-                & > .pp-1{
-                        margin-left: 100px;
-                        font-size: 48px;
-                        color: $main-color;
-                        margin-bottom: 50px;
-                }
-                & > .xx{
-                    margin-left: 65px;
-                }
-                & > .p-2{
-                        margin-left: 50px;
-                        font-size:19px ;
-                        color: $main-color;
-                }
-                & > .pp-2{
-                        margin-left: 70px;
-                        font-size:19px ;
-                        color: $main-color;
-                    margin-bottom: 50px;;
-                }
-                
-                & > .inb-1{
-                    & > .inp-1{
-                        margin-left: 145px;
-                        font-size: 12px;
-                    color: $main-color;
-                    margin-bottom: 10px;
-                    }
-                    & > .inp-2{
-                        margin-left: 110px;
-                        font-size: 72px;
-                    color: $main-color;
-                    margin-bottom: 10px;
-                    }
-                    & > .inp-3{
-                        margin-left: 130px;
-                        font-size: 24px;
-                    color: $main-color;
-                    margin-bottom: 50px;
-                    }
-                }
-
-                & > .inb-2{
-                    margin-left: 50px;
-                    margin-bottom: 30px;
-
-                    & > .in-inb-1{
-                        display: flex;
-                        margin-bottom: 5px;
-                    
-                        & > .check{
-                            margin-right: 0px;
-                        }
-                        & > .inp-4{
-                            margin-left: 5px;
-                            font-size:16px; 
-                            color:$main-color;
-                        
-                        }
-                    }
-
-                }
-                & > .inb-3{
-                    display: flex;
-                   
-                    & > .inp-5{
-                        cursor: pointer;
-                        color: $main-color;
-                        margin-top: 4px;
-                        font-size:20px ;
-                        margin-left: 130px;
-                        margin-right: 5px;
-                    }
-                    & > .inp-5:hover{
-                       color: #0f1a35;
-                    }
-                }
-            }
-            & > .shadow{
-                height: 560px;
-                -webkit-box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #E0E0E0; 
-                box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #E0E0E0;
-                margin-top: 35px;
-            }
-        }   
-        
-
-
-    }
-    // section#2 finish
-    // section#3 starst
-    .sec-3{
-        display: flex;
-        & > .onebox{
-        
-            & > .sec-3p1{
-                color:$main-color ;
-                font-size:12px ;
-                margin-left: 630px;
-                margin-top: 300px;
-                margin-bottom: 20px;
-            }
-            & > .sec-3p2{
-                color:$main-color ;
-                font-size:72px ;
-                margin-left: 350px;
-                margin-bottom: 20px;
-
-            }
-            & > .search-container{
-                margin-left: 480px;
-                margin-bottom: 20px;
-
-                & > form.example input[type=text] {
-                    padding: 10px;
-                    font-size: 17px;
-                    border: 0px solid #ffffff;
-                    border-radius: 30px;
-                    border: none;
-                    float: left;
-                    width: 400px;
-                    background: #fdfafa;
-                }
-                & > form.example button {
-                    float: left;
-                    width: 40px;
-                    height: 40px;
-                    padding: 10px;
-                    border-radius: 30px;
-                    font-size: 17px;
-                    background-color:$main-color;
-                    color: #ffffff;
-                    border: 0px solid ;
-                    border-left: none; /* Prevent double borders */
-                   cursor: pointer;
-                   margin-left: 5px;
-                  }
-                  & > form.example button:hover {
-                    background: #152444;
-                  }
-                  & > form.example::after {
-                    content: "";
-                    clear: both;
-                    display: table;
-                  }
-                  
-            }
-            & > .sec-3p3{
-                color:$main-color ;
-                font-size:22px ;
-                margin-left: 540px;
-                margin-top: 80px;
-            }
-            & > .sec-3p4{
-                color:$main-color ;
-                font-size:22px ;
-               margin-left: 600px;
-            }
-        }
-        & >.twobox{
-            margin-top: 280px;
-        }
-
+      & > .front-p {
+        font-size: 90px;
+        color: $main-color;
+        margin-bottom: 50px;
+      }
+      & > .low {
+        font-size: 19px;
+        color: $main-color;
+        margin-bottom: 70px;
+      }
     }
 
-    // section#3 finish
-    // section#4 start
-    .sec-4 {
-        display: flex;
-        
-        justify-content: center;
-        
-
-        & > .slideshow{
-            
-            width: 1350px;
-            padding: 50px;
-            position: relative;
-
-            & > .arrow {
-                background: rgba(0, 0, 0, 0.7);
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 60px;
-                margin: 10px;
-                display: flex;
-                top: 50%;
-                transform: translate(0%, -50%);
-                transition: .4s;
-                z-index: 1;
-                width: 80px;
-                height: 80px;
-                position: absolute;
-            }
-            & >.arrow:hover {
-                background: rgb(233, 232, 232);
-                color: black;
-            }
-            & >#arrow-right i.fa {
-                position: relative;
-                right: -4px;
-                top: -3px;
-            }
-            & > #arrow-left i.fa {
-                position: relative;
-                left: -4px;
-                top: -3px;
-            }
-              
-            & >   #arrow-right {
-                right: 0;
-            }
-        
-                           
-                
-            & > .slide{
-                display: flex;
-                justify-content: center;
-                & > .sec-4inbox1{
-                        
-                    width: 295px;
-                    height: 520px;                    
-                    padding:20px;
-                    text-align: center;
-                    background-color: #ffffff;
-                    -webkit-box-shadow: 1px 17px 37px -15px #080808; 
-                    box-shadow: 1px 17px 37px -15px #080808;
-                    & > .sec-4p1{
-                        color:$main-color;
-                        font-size:12px;
-                        margin-top: 80px;
-                                    
-                                
-                    }
-                    & > .sec-4p2{
-                        color:$main-color;
-                        font-size:48px;
-                        margin-top: 30px;
-                                
-                    }
-                    & > .sec-4p3{
-                        color:$main-color;
-                        font-size:19px;
-                        margin-top: 30px;
-                    }
-                        
-
-                    
-                }
-                &  > .sec-4inbox2{
-                    
-                    width: 500px;
-                }
-            }
-            
-        }       
+    & > .in-2 {
+      margin: 0px;
     }
-    
-    // section#4 finish
-    // footer start
-
-    footer{
-        color:$main-color;
-        background-color:#b5f1f6 ;
-        & > .footbox1{
-            @extend %senter-size;
-            display: flex;
-            justify-content: space-between;
-            & > .footinb1{
-                .footp1{
-                    font-size:16px;
-               
-                }
-            }
-            & > .footinb2{
-                & > .footp2{
-                    font-size:24px;
-                    margin-bottom: 10px;
-                }
-                & > .footp3{
-                    font-size:14px; 
-
-                }
-            }
-            & > .footinb3{
-
-               .footp4{
-                font-size:14px ;
-                margin-bottom: 10px;
-               }
-                
-            }    
-        }  
+  }
+  // section#1 finish
+  // section#2 starst
+  .sec-2 {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    & > .dscv {
+      & > .discover {
+        font-size: 16px;
+        color: $main-color;
+        margin-left: 560px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+      }
+      & > .imgarrow {
+        margin-left: 590px;
+        margin-bottom: 100px;
+      }
     }
-    // footer start
-    // page2 start
-    .p2-sec-1{
-        color: $main-color ;
-        @extend %section-size;
-        & > .pg2-p1{
+
+    & > .Paketi {
+      font-size: 16px;
+      color: $main-color;
+      margin-left: 580px;
+      margin-bottom: 100px;
+    }
+
+    & > .insec-2 {
+      @include flex-props;
+
+      @media (max-width: 1390px) {
+      }
+
+      & > .sbox {
+        padding: 30px;
+        width: 470px;
+        height: 537px;
+        background-color: #fff;
+        border: 2px;
+        border-color: rgb(249, 249, 249);
+
+        & > .p-1 {
+          margin-left: 120px;
+          font-size: 48px;
+          color: $main-color;
+        }
+        & > .pp-1 {
+          margin-left: 100px;
+          font-size: 48px;
+          color: $main-color;
+          margin-bottom: 50px;
+        }
+        & > .xx {
+          margin-left: 65px;
+        }
+        & > .p-2 {
+          margin-left: 50px;
+          font-size: 19px;
+          color: $main-color;
+        }
+        & > .pp-2 {
+          margin-left: 70px;
+          font-size: 19px;
+          color: $main-color;
+          margin-bottom: 50px;
+        }
+
+        & > .inb-1 {
+          & > .inp-1 {
+            margin-left: 145px;
+            font-size: 12px;
             color: $main-color;
-            font-size:45px ;
-            margin-left: 200px
+            margin-bottom: 10px;
+          }
+          & > .inp-2 {
+            margin-left: 110px;
+            font-size: 72px;
+            color: $main-color;
+            margin-bottom: 10px;
+          }
+          & > .inp-3 {
+            margin-left: 130px;
+            font-size: 24px;
+            color: $main-color;
+            margin-bottom: 50px;
+          }
         }
-        & > .pg2-bbox{
-            @extend %section-size;
-            background-image: url("../images/backgrounbox.png");
-            
-            & > .pg2-boxp1{
-                
-                font-size:48px  ;
-                padding-top: 50px;
-                margin-bottom:50px ;
 
-            }
-            & > .pg2-boxp2{
-                
-                font-size:29px;
-                padding-bottom: 300px;
-               
+        & > .inb-2 {
+          margin-left: 50px;
+          margin-bottom: 30px;
 
+          & > .in-inb-1 {
+            display: flex;
+            margin-bottom: 5px;
+
+            & > .check {
+              margin-right: 0px;
             }
+            & > .inp-4 {
+              margin-left: 5px;
+              font-size: 16px;
+              color: $main-color;
+            }
+          }
         }
-        & > .pg2-bbox2{
-            @extend %section-size;
-            @include flex-props;
+        & > .inb-3 {
+          display: flex;
 
-            @media(max-width:1390px){
-                flex-wrap: wrap;
-            }
-            & >.pg2-inbbox{
-                @include flex-propss;
-
-                &  > .ppbox{
-                    margin-left: 15px;
-                    & > .pp1{
-                        font-size: 48px;
-                        margin-bottom: 10px;
-                    }
-                    & > .pp2{
-                        font-size: 16px;
-                    }
-                    
-                }
-            }
+          & > .inp-5 {
+            cursor: pointer;
+            color: $main-color;
+            margin-top: 4px;
+            font-size: 20px;
+            margin-left: 130px;
+            margin-right: 5px;
+          }
+          & > .inp-5:hover {
+            color: #0f1a35;
+          }
         }
-        & > .lastbox{
-            @extend %section-size;
-        
-            & > .ppp1{
-                font-size:52px ;
-                margin: auto;
-                padding-bottom:25px ;
-
-            }
-            & > .butt{
-                color: #ffffff;
-                border: 5px ;
-                background-color: #273962;
-                border-radius: 30px;
-                font-size: 26px;
-                margin-left: 460px;
-                cursor: pointer;
-            }
-            & >.butt:hover{
-                background-color:#142345 ;
-            }
-        }
+      }
+      & > .shadow {
+        height: 560px;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000,
+          -7px 12px 28px -2px #e0e0e0;
+        box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #e0e0e0;
+        margin-top: 35px;
+      }
     }
+  }
+  // section#2 finish
+  // section#3 starst
+  .sec-3 {
+    display: flex;
+    & > .onebox {
+      & > .sec-3p1 {
+        color: $main-color;
+        font-size: 12px;
+        margin-left: 630px;
+        margin-top: 300px;
+        margin-bottom: 20px;
+      }
+      & > .sec-3p2 {
+        color: $main-color;
+        font-size: 72px;
+        margin-left: 350px;
+        margin-bottom: 20px;
+      }
+      & > .search-container {
+        margin-left: 480px;
+        margin-bottom: 20px;
 
-    & > .pg3-sec{
+        & > form.example input[type="text"] {
+          padding: 10px;
+          font-size: 17px;
+          border: 0px solid #ffffff;
+          border-radius: 30px;
+          border: none;
+          float: left;
+          width: 400px;
+          background: #fdfafa;
+        }
+        & > form.example button {
+          float: left;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+          border-radius: 30px;
+          font-size: 17px;
+          background-color: $main-color;
+          color: #ffffff;
+          border: 0px solid;
+          border-left: none; /* Prevent double borders */
+          cursor: pointer;
+          margin-left: 5px;
+        }
+        & > form.example button:hover {
+          background: #152444;
+        }
+        & > form.example::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+      }
+      & > .sec-3p3 {
+        color: $main-color;
+        font-size: 22px;
+        margin-left: 540px;
+        margin-top: 80px;
+      }
+      & > .sec-3p4 {
+        color: $main-color;
+        font-size: 22px;
+        margin-left: 600px;
+      }
+    }
+    & > .twobox {
+      margin-top: 280px;
+    }
+  }
+
+  // section#3 finish
+  // section#4 start
+  .sec-4 {
+    display: flex;
+
+    justify-content: center;
+
+    & > .slideshow {
+      width: 1350px;
+      padding: 50px;
+      position: relative;
+
+      & > .arrow {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        margin: 10px;
+        display: flex;
+        top: 50%;
+        transform: translate(0%, -50%);
+        transition: 0.4s;
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+      }
+      & > .arrow:hover {
+        background: rgb(233, 232, 232);
+        color: black;
+      }
+      & > #arrow-right i.fa {
+        position: relative;
+        right: -4px;
+        top: -3px;
+      }
+      & > #arrow-left i.fa {
+        position: relative;
+        left: -4px;
+        top: -3px;
+      }
+
+      & > #arrow-right {
+        right: 0;
+      }
+
+      & > .slide {
+        display: flex;
+        justify-content: center;
+        & > .sec-4inbox1 {
+          width: 295px;
+          height: 520px;
+          padding: 20px;
+          text-align: center;
+          background-color: #ffffff;
+          -webkit-box-shadow: 1px 17px 37px -15px #080808;
+          box-shadow: 1px 17px 37px -15px #080808;
+          & > .sec-4p1 {
+            color: $main-color;
+            font-size: 12px;
+            margin-top: 80px;
+          }
+          & > .sec-4p2 {
+            color: $main-color;
+            font-size: 48px;
+            margin-top: 30px;
+          }
+          & > .sec-4p3 {
+            color: $main-color;
+            font-size: 19px;
+            margin-top: 30px;
+          }
+        }
+        & > .sec-4inbox2 {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  // section#4 finish
+  // footer start
+
+  footer {
+    color: $main-color;
+    background-color: #b5f1f6;
+    & > .footbox1 {
+      @extend %senter-size;
+      display: flex;
+      justify-content: space-between;
+      & > .footinb1 {
+        .footp1 {
+          font-size: 16px;
+        }
+      }
+      & > .footinb2 {
+        & > .footp2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        & > .footp3 {
+          font-size: 14px;
+        }
+      }
+      & > .footinb3 {
+        .footp4 {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  // footer start
+  // page2 start
+  .p2-sec-1 {
+    color: $main-color;
+    @extend %section-size;
+    & > .pg2-p1 {
+      color: $main-color;
+      font-size: 45px;
+      margin-left: 200px;
+    }
+    & > .pg2-bbox {
+      @extend %section-size;
+      background-image: url("../images/backgrounbox.png");
+
+      & > .pg2-boxp1 {
+        font-size: 48px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+      }
+      & > .pg2-boxp2 {
+        font-size: 29px;
+        padding-bottom: 300px;
+      }
+    }
+    & > .pg2-bbox2 {
+      @extend %section-size;
+      @include flex-props;
+
+      @media (max-width: 1390px) {
+        flex-wrap: wrap;
+      }
+      & > .pg2-inbbox {
         @include flex-propss;
-        color:$main-color ;
-        margin-bottom: 30px;
 
-        @media(max-width:1390px){
-            flex-wrap: wrap;
+        & > .ppbox {
+          margin-left: 15px;
+          & > .pp1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+          }
+          & > .pp2 {
+            font-size: 16px;
+          }
         }
-        & > .mapp{
-
-            
-            & > .map{
-                margin-left: 100px;
-     
-            }
-        }
-        & > .pg3-box{
-            margin-left: 50px;
-            & > .pg3p1{
-                font-size: 55px;
-                margin-bottom: 50px;
-
-            }
-            & > .pg3p2{
-                font-size: 20px;
-                margin-bottom: 30px;
-
-            }
-            & > .pg3p3{
-                font-size: 15px;
-                margin-bottom: 40px;
-            }
-
-
-
-    
-        }
+      }
     }
+    & > .lastbox {
+      @extend %section-size;
 
-    //  media
+      & > .ppp1 {
+        font-size: 52px;
+        margin: auto;
+        padding-bottom: 25px;
+      }
+      & > .butt {
+        color: #ffffff;
+        border: 5px;
+        background-color: #273962;
+        border-radius: 30px;
+        font-size: 26px;
+        margin-left: 460px;
+        cursor: pointer;
+      }
+      & > .butt:hover {
+        background-color: #142345;
+      }
+    }
+  }
 
-    
-    
+  & > .pg3-sec {
+    @include flex-propss;
+    color: $main-color;
+    margin-bottom: 30px;
 
+    @media (max-width: 1390px) {
+      flex-wrap: wrap;
+    }
+    & > .mapp {
+      & > .map {
+        margin-left: 100px;
+      }
+    }
+    & > .pg3-box {
+      margin-left: 50px;
+      & > .pg3p1 {
+        font-size: 55px;
+        margin-bottom: 50px;
+      }
+      & > .pg3p2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      & > .pg3p3 {
+        font-size: 15px;
+        margin-bottom: 40px;
+      }
+    }
+  }
 
-
-
-
-
-
-
+  //  media
 }
-

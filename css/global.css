@@ -322,8 +322,8 @@ body .sec-2 > .insec-2 > .sbox > .inb-3 > .inp-5:hover {
 
 body .sec-2 > .insec-2 > .shadow {
   height: 560px;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #E0E0E0;
-  box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #E0E0E0;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #e0e0e0;
+  box-shadow: 0px 10px 13px -7px #000000, -7px 12px 28px -2px #e0e0e0;
   margin-top: 35px;
 }
 
@@ -353,7 +353,7 @@ body .sec-3 > .onebox > .search-container {
   margin-bottom: 20px;
 }
 
-body .sec-3 > .onebox > .search-container > form.example input[type=text] {
+body .sec-3 > .onebox > .search-container > form.example input[type="text"] {
   padding: 10px;
   font-size: 17px;
   border: 0px solid #ffffff;
@@ -440,8 +440,8 @@ body .sec-4 > .slideshow > .arrow {
   top: 50%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   z-index: 1;
   width: 80px;
   height: 80px;

@@ -1,14 +1,13 @@
 @mixin flex-props($justify: space-between, $align: center) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
 }
 @mixin justflex {
-    display: flex;
-    flex-wrap: wrap;
-    
+  display: flex;
+  flex-wrap: wrap;
 }
 @mixin flex-propss($justify: space-between, $align: center) {
-    display: flex;
-    align-items: $align;
+  display: flex;
+  align-items: $align;
 }

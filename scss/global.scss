@@ -1,29 +1,27 @@
-@import './_reset';
-@import './_variables';
-@import './_mixins';
-@import './_placeholder';
-@import './_style';
-@import './_media';
+@import "./_reset";
+@import "./_variables";
+@import "./_mixins";
+@import "./_placeholder";
+@import "./_style";
+@import "./_media";
 
 a:link {
-    color: #1b2d55;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #172c59;;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #34508d;;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:active {
-    color: #1c9ad4;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  
+  color: #1b2d55;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #172c59;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #34508d;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #1c9ad4;
+  background-color: transparent;
+  text-decoration: underline;
+}
