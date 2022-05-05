@@ -34,3 +34,17 @@ function alert1() {
 // alert1()
 
 startSlider()
+
+
+
+const hamburger = document.querySelector(".hamburger");
+const navmenu = document.querySelector(".nav-menu");
+const barr = document.querySelector(".barr");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navmenu.classList.toggle("active");
+  barr.classList.toggle("active");
+
+
+})

@@ -3,46 +3,68 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 
     // header start 
-        header{
+    header{
+        @include flex-props;
+        @extend %senter-size;
+
+        .navbar{
+            
             @include flex-props;
-            @extend %senter-size;
+            padding: 0 24px;
             
 
-            & > .logo{
+            & > .nav-breanding{
             margin: 0px;
             }
+     
+            & > .nav-menu{
+                @include flex-props;
+                margin-left: 660px;
+                
+               
+                
+                & > .nav-item{
+                    margin-left: 20px;
+                }   
+                
+                & > .nav-link{
+                    transition: 0.7s ease;
+                    
+                }
+                & > .nav-link:hover{
+                    color:#2d4477; 
+                    
+                }
+                     
+            
+            }
+            & > .hamburger{
+                display: none;
+                cursor: pointer;
 
-            & > .n-1{
-            @include justflex;
-                margin-left: 10px;
+                @media(max-width:1390px){
+                    display: block;
+                    margin-left: 1000px;
+                }
 
-                nav{
-                    justify-content: space-between;
-                    align-items: center;
+                
+                & > .bar {
+                    display: block;
+                    width: 25px;
+                    height: 10px;
+                    margin: 5px auto;
                     
-                    ul{
-                        @include justflex;
                     
-                    
-                        li{
-                            vertical-align:middle;
-                            font-size: 16px;
-                            color:$main-color ;
-                            margin-right: 20px;
-                            line-height: 30px;
-                        }
-                        li:hover{
-                            border: 1px; 
-                            border-radius: 20px;
-                            background-color:#b5f1f6; 
-                        }
-                    }   
+                
+
                 }
             }
         }
+    }
     // headere finish
     // section#1 starst
     .sec-1{
@@ -104,6 +126,10 @@ body{
 
         & > .insec-2{
             @include flex-props;
+            
+            @media (max-width: 1390px){
+                
+            }
 
             
             & > .sbox{
@@ -448,6 +474,10 @@ body{
         & > .pg2-bbox2{
             @extend %section-size;
             @include flex-props;
+
+            @media(max-width:1390px){
+                flex-wrap: wrap;
+            }
             & >.pg2-inbbox{
                 @include flex-propss;
 
@@ -492,6 +522,10 @@ body{
         @include flex-propss;
         color:$main-color ;
         margin-bottom: 30px;
+
+        @media(max-width:1390px){
+            flex-wrap: wrap;
+        }
         & > .mapp{
 
             
@@ -519,10 +553,21 @@ body{
 
 
 
-            
     
-
         }
     }
+
+    //  media
+
+    
+    
+
+
+
+
+
+
+
+
 }
 
